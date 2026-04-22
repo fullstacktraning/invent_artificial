@@ -44,7 +44,7 @@ pipeline {
                 sh '''
                 docker run -d \
                 --name $CONTAINER_NAME \
-                -p 8080:8080 \
+                -p 9999:9999 \
                 $IMAGE_NAME
                 '''
             }
@@ -56,4 +56,8 @@ pipeline {
             echo 'Deployment Success'
         }
 
+        failure {
+            echo 'Deployment Failed'
+        }
+    }
 }
