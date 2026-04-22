@@ -1,0 +1,6 @@
+1) brew install openjdk@21
+
+2) echo 'export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+3) java -version
